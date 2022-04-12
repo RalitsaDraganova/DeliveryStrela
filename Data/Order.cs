@@ -13,8 +13,7 @@ namespace DeliveryStrela.Data
         public User User { get; set; }
 
         public ICollection<OrdersDetails> Details { get; set; }
-        public int Count { get; set; }
-
+     
         public DateTime OrderOn { get; set; }
 
     }

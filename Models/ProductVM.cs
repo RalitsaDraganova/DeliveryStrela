@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DeliveryStrela.Data;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -17,10 +18,14 @@ namespace DeliveryStrela.Models
 
         public double Grams { get; set; }
 
-        public int CategoryId { get; set; }
-      
         public decimal Price { get; set; }
 
-        public string Description { get; set; }
+        public CategoryKind Category { get; set; }
+
+        public string Description { get; set; } 
+
+        public string IdUser { get; set; }
+
+        public int Count { get; set; }
     }
 }

@@ -14,16 +14,16 @@ namespace DeliveryStrela.Data
 
         public string Name { get; set; }
 
-        public string Diet { get; set; }
+        public bool Diet { get; set; }
 
         public double Grams { get; set; }
 
-        public int CategoryId { get; set; }
-        public Category Category { get; set; }
+        public CategoryKind Category { get; set; }
 
         [Column(TypeName = "decimal(18,2)")]
         public decimal Price { get; set; }
 
+        public int ProductCount { get; set; }
         public string Description { get; set; }
         public virtual ICollection<Order> Orders { get; set; }
     }

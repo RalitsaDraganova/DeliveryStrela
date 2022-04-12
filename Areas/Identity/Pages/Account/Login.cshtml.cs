@@ -5,13 +5,13 @@ using System.Linq;
 using System.Text.Encodings.Web;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
+using DeliveryStrela.Data;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
-using DeliveryStrela.Data;
 
 namespace DeliveryStrela.Areas.Identity.Pages.Account
 {
@@ -44,6 +44,7 @@ namespace DeliveryStrela.Areas.Identity.Pages.Account
         public class InputModel
         {
             [Required]
+           // [EmailAddress]
             public string UserName { get; set; }
 
             [Required]

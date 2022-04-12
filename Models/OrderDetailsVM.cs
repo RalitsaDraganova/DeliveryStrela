@@ -9,8 +9,10 @@ namespace DeliveryStrela.Models
     {
         public int Id { get; set; }
 
-        public int IdOrder { get; set; }
+        public int OrderId { get; set; }
 
-        public int IdProduct { get; set; }
+        public int ProductId { get; set; }
+
+        public int Count { get; set; }
     }
 }

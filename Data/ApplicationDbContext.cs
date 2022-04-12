@@ -16,7 +16,6 @@ namespace DeliveryStrela.Data
 
        public  DbSet<Order> Orders { get; set; }
        public DbSet<OrdersDetails> OrdersDetails { get; set; }
-       public DbSet<Category> Categories { get; set; }
        public DbSet<Product> Products { get; set; }
 
     }
