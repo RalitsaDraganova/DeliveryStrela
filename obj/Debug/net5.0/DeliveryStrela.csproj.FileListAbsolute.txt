@@ -367,4 +367,3 @@ E:\visualstudio2\DeliveryStrela\DeliveryStrela\obj\Debug\net5.0\Razor\Views\Prod
 E:\visualstudio2\DeliveryStrela\DeliveryStrela\obj\Debug\net5.0\Razor\Views\Products\Details.cshtml.g.cs
 E:\visualstudio2\DeliveryStrela\DeliveryStrela\obj\Debug\net5.0\Razor\Views\Products\Edit.cshtml.g.cs
 E:\visualstudio2\DeliveryStrela\DeliveryStrela\obj\Debug\net5.0\Razor\Views\Products\Index.cshtml.g.cs
-E:\visualstudio2\DeliveryStrela\DeliveryStrela\obj\Debug\net5.0\DeliveryStrela.csproj.AssemblyReference.cache

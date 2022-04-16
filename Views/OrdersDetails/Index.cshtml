@@ -39,10 +39,10 @@
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
                 <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>|
-                <a asp-controller="Products" asp-action="Index">Продължи пазаруването</a>
+                <a asp-action="Delete" asp-route-id="@item.Id">Details</a>|
             </td>
         </tr>
 }
     </tbody>
 </table>
-<input type="button" value="Финализирай поръчката" onclick="alert("Поръчката Ви е изпратена");/>
+<a class="btn btn-sm btn-warning" asp-action="Calculate" asp-route-orderId="@Model.First().OrderId">final</a>

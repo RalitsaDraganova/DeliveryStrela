@@ -7,12 +7,9 @@ namespace DeliveryStrela.Models
 {
     public class OrderVM
     {
-        
-        public int Id { get; set; }
-
-        public int UserId { get; set; }
-
-        public DateTime OrderOn { get; set; }
-
+        public int ProductId { get; set; }
+        public decimal Price { get; set; }
+        public int Count { get; set; }
+        public string UserId { get; set; }
     }
 }

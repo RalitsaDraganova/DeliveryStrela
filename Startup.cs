@@ -36,6 +36,14 @@ namespace DeliveryStrela
                 .AddRoles<IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();
+            
+            services.AddDistributedMemoryCache();
+            services.AddSession(option =>
+            {
+                option.IdleTimeout = TimeSpan.FromMinutes(5);
+            });
+            services.AddMvc();
+
             services.AddControllersWithViews();
         }
 
@@ -56,7 +64,7 @@ namespace DeliveryStrela
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-
+            app.UseSession();
             app.UseRouting();
 
             app.UseAuthentication();

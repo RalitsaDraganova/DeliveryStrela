@@ -51,7 +51,7 @@ namespace DeliveryStrela.Controllers
                 Id = product.Id,
                 Price = product.Price,
                 Diet = product.Diet.ToString(),
-                IdUser= _userManager.GetUserId(User),
+                UserId= _userManager.GetUserId(User),
                 Count = 1 ,
                 Category = product.Category
             };

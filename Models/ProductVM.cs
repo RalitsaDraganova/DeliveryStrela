@@ -24,7 +24,7 @@ namespace DeliveryStrela.Models
 
         public string Description { get; set; } 
 
-        public string IdUser { get; set; }
+        public string UserId { get; set; }
 
         public int Count { get; set; }
     }

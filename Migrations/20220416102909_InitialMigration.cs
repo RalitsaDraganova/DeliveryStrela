@@ -182,6 +182,8 @@ namespace DeliveryStrela.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     UserId = table.Column<string>(type: "nvarchar(450)", nullable: true),
                     OrderOn = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    Final = table.Column<bool>(type: "bit", nullable: false),
+                    Total = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
                     ProductId = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
