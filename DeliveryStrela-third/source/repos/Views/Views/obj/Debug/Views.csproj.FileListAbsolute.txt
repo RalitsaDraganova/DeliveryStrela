@@ -1,0 +1,7 @@
+C:\Users\Rale\source\repos\Views\Views\bin\Debug\Views.exe.config
+C:\Users\Rale\source\repos\Views\Views\bin\Debug\Views.exe
+C:\Users\Rale\source\repos\Views\Views\bin\Debug\Views.pdb
+C:\Users\Rale\source\repos\Views\Views\obj\Debug\Views.csproj.AssemblyReference.cache
+C:\Users\Rale\source\repos\Views\Views\obj\Debug\Views.csproj.CoreCompileInputs.cache
+C:\Users\Rale\source\repos\Views\Views\obj\Debug\Views.exe
+C:\Users\Rale\source\repos\Views\Views\obj\Debug\Views.pdb

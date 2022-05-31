@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewData["Title"] = "Contacts";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        body {
+            font-family: "Times New Roman", Georgia, Serif;
+        }
+
+        h1 {
+            letter-spacing: 5px;
+        }
+        p {
+            font-size:20px;
+        }
+    </style>
+</head>
+<h1>Контакти</h1>
+
+<div class="w3-container w3-padding-64" id="contact">
+    <p>В няколко лесни стъпки можете да поръчате каквото желаете онлайн, но ако имате нужда от повече информация или помощ, свържете се с нас:</p>
+    <p class="w3-text-blue-grey w3-large"><b>Ул. Трети март №31 , град Сопот 4330 , България </b></p>
+    <p>Можете да се свържете с нас на телефон <b>0895966549</b> или да ни изпратите имейл на <b>delivery_strela@gmail.com</b> тук :</p>
+    <form asp-contoller="Home" asp-action="Contacts" target="_blank">
+        <p><input class="w3-input w3-padding-16" type="text" placeholder="Име" required name="Name"></p>
+        <p><input class="w3-input w3-padding-16" type="datetime-local" placeholder="Дата" required name="date" value=""></p>
+        <p><input class="w3-input w3-padding-16" type="text" placeholder="Съобщение" required name="Message"></p>
+        <p><button class="w3-button w3-light-grey w3-section" type="submit">ИЗПРАТИ</button></p>
+    </form>
+</div>
+

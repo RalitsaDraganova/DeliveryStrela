@@ -1,0 +1,65 @@
+﻿@model DeliveryStrela.Models.ProductVM
+
+@{ ViewData["Title"] = "Details"; }
+
+<h2>Поръчка и детайли</h2>
+
+<div>
+
+    <hr />
+    <form asp-controller="OrdersDetails" asp-action="Create" method="post">
+        <div class="shadow col-5">
+            <input type="submit" class="btn-outline-dark" value="Поръчай" /> &nbsp; &nbsp;
+            <button value="final" asp-action="Index" asp-controller="OrdersDetails" class="btn-outline-dark">Финализирай</button>
+        </div>
+        <div class="shadow col-5 rounded">
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="CatalogNumber" class="control-label"></label>
+                <input asp-for="CatalogNumber" class="form-control" readonly />
+                <span asp-validation-for="CatalogNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control " readonly />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Diet" class="control-label"></label>
+                <input asp-for="Diet" class="form-control form-check" readonly />
+                <span asp-validation-for="Diet" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Grams" class="control-label"></label>
+                <input asp-for="Grams" class="form-control" readonly />
+                <span asp-validation-for="Grams" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Category" class="control-label"></label>
+                <input asp-for="Category" class="form-control" readonly />
+                <span asp-validation-for="Category" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Price" class="control-label"></label>
+                <input asp-for="Price" class="form-control" readonly />
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <input asp-for="Description" class="form-text" readonly />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Quantity" class="control-label"></label>
+                <input asp-for="Quantity" class="form-control-plaintext" type="number" />
+                <span asp-validation-for="Quantity" class="text-danger"></span>
+            </div>
+        </div>
+
+    </form>
+</div>
+
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Върни се обратно</a>
+</div>
